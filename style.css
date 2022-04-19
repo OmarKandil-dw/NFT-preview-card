@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+    --bg-clr-primary: hsl(215, 51%, 70%);
+    --bg-clr-secondary: hsl(178, 100%, 50%);
+    --bg-clr-main: hsl(216, 54%, 11%);
+    --bg-clr-card: hsl(215, 51%, 16%);
+    --bg-clr-line: hsl(215, 32%, 27%);
+    --bg-clr-light: hsl(0, 0%, 100%);
+
+    --fs-h1: 1.15rem;
+    --fs-paragraph: 18px;
+
+    --ff-primary: 'Outfit', sans-serif;
+}
+
+/* General Properties */
+body {
+    background-color: var(--bg-clr-main);
+    color: var(--bg-clr-light);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-paragraph);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: var(--bg-clr-card);
+    width: 300px;
+    margin: auto auto;
+    margin-top: 10vh;
+    margin-bottom: 4em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 12px;
+}
+
+/* Header area */
+.header__img {
+    width: 250px;
+    border-radius: 12px;
+}
+
+.div__header--title {
+    font-size: var(--fs-h1);
+    margin-bottom: 0;
+}
+
+/* Main Area */
+.main {
+    border-bottom: .5px solid var(--bg-clr-line);
+    font-size: .75em;
+}
+
+.div__main--para {
+    color: var(--bg-clr-primary);
+}
+
+.div__main--value-para {
+    color: var(--bg-clr-secondary);
+    display: inline-flex;
+    align-items: center;
+    margin-right: 6em;
+}
+
+.div__main--time-left-para {
+    color: var(--bg-clr-primary);
+    display: inline-flex;
+    align-items: center;
+}
+
+.main img {
+    margin-right: .25em;
+}
+
+/* Footer Area */
+.div__footer--para {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: .75em;
+    margin: 0;
+    margin-top: 1em;
+}
+
+span {
+    color: var(--bg-clr-primary);
+    margin-right: .25em;
+}
+
+.div__footer--img {
+    width: 30px;
+    margin-right: 1em;
+    border: 1px solid var(--bg-clr-light);
+    border-radius: 50%;
+}
